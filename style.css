@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Poetsen+One&display=swap');
+
+
+:root {
+    --text-color: #EAEAEA; /* Light gray color */
+}
+
+::selection{
+    background-color: #fff;
+    color: #000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav div{
+    overflow: hidden;
+}
+
+.homepage {
+    /* Define gradient background */
+    background: linear-gradient(100deg, #000000 60%, #7e26d6);
+}
+
+
+
+nav{
+    z-index: 999;
+}
+
+.logo, #name{
+    font-family: "Poetsen one", sans-serif;
+}
+
+
+
+.logo{
+    font-weight: 200;
+}
+
+.intro span{
+    overflow: hidden;
+}
+
+#desc{
+    border-left: 2px solid white;
+}
+
+
+.purple-lines{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+   justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    gap: 1.5rem;
+}
+
+.socials a{
+    color: #261636;
+}
+
+.socials a:hover{
+    color: #fff;
+    transition: all 0.3s ease;
+    background-color: #000;
+}
+
+.purple-lines span{
+    color: #9b6cca;
+    font-size: 4rem;
+    transform: rotate(-90deg);
+   
+}
+
+.pfp{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.pfp span{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.pfp-img{
+   
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+     
+    border-radius: 50%;
+}
+
+.pfp-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+.glass-nav {
+    background-color: rgba(22, 21, 21, 0.26); /* Adjust opacity as needed */
+    backdrop-filter: blur(20px); /* Adjust blur intensity as needed */
+    /* Add padding for spacing */
+  }
+  
+
+  .actions button{
+    background-color: hsla(270, 47%, 61%, 0.50);
+    transition: all 0.3s ease;
+ 
+  }
+
+  .actions button:hover{
+    background-color: #66329af8;
+  }
+
+  .aboutPage {
+    background: linear-gradient(150deg, #000000 60%, #221530);
+}
+
+.skillsPage {
+    background: linear-gradient(-340deg, #000000 70%, #221530);
+
+}
+
+
+.aboutPage button{
+    background-color: #66329af8;
+   transition: all 0.5s ease;
+  }
+
+  .aboutPage button:hover{
+   scale: 1.1;
+   box-shadow: 5px 5px 20px #764BA2, -5px -5px 20px #764BA2;
+ 
+  }
+
+.aboutImg{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.aboutPage div img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    scale: 1.5;
+}
+
+.skill{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.skill p{
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.skill .progress{
+    width: 75%;
+    background-color: #261636;
+}
+
+
+
+.progress .progress-bar{
+    background-color: #6807c9;
+    transition: all 0.3s ease;
+    border-radius: inherit;
+}
+
+
+.progress-bar span{
+    opacity: 0;
+}
+
+
+.cursor{
+    z-index: 1;
+    box-shadow: 10px 10px 30px #8226dd, -10px -10px 30px #8226dd;
+}
