@@ -73,7 +73,7 @@ function loadingAnimation(params) {
 }
 
 
-//loadingAnimation();
+loadingAnimation();
 
 
 const scroll = new LocomotiveScroll({
@@ -151,7 +151,7 @@ function skillsAnimations() {
 }
 
 
-//skillsAnimations();
+skillsAnimations();
 
 const cursor = document.querySelector('.cursor');
 
@@ -170,4 +170,105 @@ function updateCursor(e) {
 }
 
 // Attach event listener
-document.querySelector('body').addEventListener('mousemove', updateCursor);
+//document.querySelector('body').addEventListener('mousemove', updateCursor);
+
+
+
+const proImg = document.querySelectorAll(".proImg");
+
+proImg.forEach((img)=>{
+    img.addEventListener('mouseenter',()=>{
+        
+        showProAnimation(img)
+    })
+})
+
+
+proImg.forEach((img)=>{
+    img.addEventListener('mouseleave',()=>{
+        hideProAnimation(img)
+    })
+})
+
+
+
+const showProAnimation = (img)=>{
+
+    const viewPro = img.querySelector('.viewpro');
+    const aTag = img.querySelector('.viewpro div a');
+    const spanTag = img.querySelector('.viewpro div span');
+
+
+
+    const tl = gsap.timeline();
+
+
+    tl.to(viewPro,{
+        opacity: 1,
+        display: "flex",
+        duration: 0.3,
+        ease: 'power3.out'
+        
+    })
+
+    
+    tl.to(aTag, {
+        opacity: 1,
+        y: 0,
+        duration: 0.3,
+        ease: 'power3.out'
+        
+    })
+
+    tl.to(spanTag, {
+        opacity: 1,
+        y: 0,
+        duration: 0.2,
+        ease: 'power3.out'
+        
+    })
+
+}
+
+
+
+const hideProAnimation = (img)=>{
+
+    const viewPro = img.querySelector('.viewpro');
+    const aTag = img.querySelector('.viewpro div a');
+    const spanTag = img.querySelector('.viewpro div span');
+
+
+    const tl = gsap.timeline();
+
+    tl.to(aTag,{
+        opacity: 0,
+        y: 100,
+        duration: 0.2,
+        stagger: 0.1,
+        ease: 'power3.out'
+        
+    })
+
+    tl.to(spanTag,{
+        opacity: 0,
+        y: 100,
+        duration: 0.2,
+        stagger: 0.1,
+        ease: 'power3.out'
+        
+    })
+
+
+
+    tl.to(viewPro,{
+        opacity: 0,
+        display: "none",
+        duration: 0.3,
+        ease: 'power3.in'
+        
+    })
+
+    
+}
+

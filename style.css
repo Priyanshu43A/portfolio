@@ -216,3 +216,108 @@ nav{
     z-index: 1;
     box-shadow: 10px 10px 30px #8226dd, -10px -10px 30px #8226dd;
 }
+
+
+.projectcont{
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+
+
+.project{
+    width: 100%;
+    display: flex;
+    padding: 0 15vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.proImg{
+    height: 35vh;
+    border-radius: 20px;
+    place-self: center;
+}
+
+.proImg:hover img{
+    scale: 1;
+    transition: all 0.5s ease;
+
+}
+
+.proImg img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    
+}
+
+
+
+.viewpro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: hidden;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+
+.viewpro div{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;   
+    overflow: hidden;
+}
+
+.viewpro div{
+    
+   padding: 5px;
+}
+
+.prodtls{
+    position: absolute;
+    right: -35%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+}
+
+.prodtls h2{
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: "oswald";
+}
+
+.prodtls p{
+    font-size: 1.5rem;
+    font-family: "oswald";
+    font-weight: lighter;
+    padding-left: 15px;
+  }
+
+  .viewpro div a, .viewpro div span{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+
+  .seeAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #7e26d6;
+  }
