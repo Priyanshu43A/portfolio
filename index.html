@@ -30,35 +30,91 @@
     <main id="main">
 
 
-        <div class="md:hidden min-w-full min-h-screen bg-black">
-            <div class="flex items-center justify-center min-h-screen bg-black text-white">
-                <div class="text-center">
-                    <h1 class="text-4xl font-bold animate-pulse">404</h1>
-                    <p class="mt-4 text-lg">Currently not available for mobile devices</p>
+        <div class="md:hidden min-w-full min-h-screen text-white bg-black">
+            <nav class="mobile-nav absolute top-0 bg-black flex justify-between items-center h-12 p-4">
+              
+
+                <div class="logo">
+                    <p class="text-2xl cursor-pointer">Priyanshu</p>
                 </div>
-            </div>
+                <div class="menu text-3xl">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="expandedNav absolute top-0 right-0">
+                    <i class="fa-solid fa-xmark closeNav"></i>
+                    <a href="/">Home</a>
+                    <a href="">Projects</a>
+                    <a href="#aboutPage">About</a>
+                    <a href="">Contact</a>
+                    <button>Contact me</button>
+                </div>
+            </nav>
+            <div class="mobIntro">
+                <div class="pfp-img">
+                    <img src="./images/MyEmoji_20240523_130450_0.png" alt="">
+                </div>
+                <h1 class="text-4xl font-bold">Hi, I'm Priyanshu👋</h1>
+                <p class="text-xl mt-4">I'm a <span class="text-red-500 font-bold">Full Stack Developer</span></p>
+                <span class="text-lg text-customGray w-full py-2 mt-4 pl-8 opacity-70 uppercase">
+                    <p>
+                        Passionate full-stack web developer crafting immersive experiences with elegant code.</p>
+                </span>
+
+                <div class="flex gap-4 mt-8 text-purple-600 p-6">
+                    <a href="https://www.instagram.com/baklol_developer/">
+                        <i class="fa-brands fa-square-instagram fa-2xl"></i>
+
+                    </a>
+                    <a href="https://youtube.com/@gwpriyanshu43?si=fhD9ZKd7L9FR4Gmv">
+                        <i class="fa-brands fa-square-youtube fa-2xl"></i>
+
+                    </a>
+                    <a href="https://github.com/Priyanshu43A">
+                        <i class="fa-brands fa-square-github fa-2xl"></i>
+                    </a>
+
+                    <a href="https://x.com/Priyans29193156">
+                        <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+                    </a>
+
+                    <a href="https://www.threads.net/@baklol_developer">
+                        <i class="fa-brands fa-square-threads fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dev-priyanshu-a51089295/">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+
+
+                </div>       
+    </div>
+        
+    <div class="skillspagemob">
+        
+    </div>
+
         </div>
 
-        <div class="md:block hidden">
+        <div class="hidden md:block">
 
 
-            <div style="background-color: #33204680;" class="cursor rounded-full w-24 h-24 absolute"></div>
+            <div style="background-color: #33204680;" class="cursor rounded-full w-24 h-24 absolute md:block hidden">
+            </div>
 
             <div class="homepage relative flex w-full min-h-screen text-white">
 
-                <nav class="bg-transparen flex p-4 items-center justify-center absolute top-0 w-full">
+                <nav class="bg-transparen md:flex hidden p-4 items-center justify-center absolute top-0 w-full">
                     <div class="glass-nav px-4 py-2 w-11/12 rounded-full flex items-center justify-between">
                         <div class="logo">
                             <p class="text-2xl cursor-pointer">Priyanshu</p>
                         </div>
-                        <div class="items w-1/3 flex justify-between items-center">
+                        <div class="items w-1/3 hidden justify-between items-center md:flex">
                             <a class="hover:underline" href="#">Home</a>
                             <a class="hover:underline" href="#">Projects</a>
                             <a class="hover:underline" href="#">About</a>
                             <a class="hover:underline" href="#">Contact</a>
 
                         </div>
-                        <div class="actions flex items-center justify-between w-1/4">
+                        <div class="actions md:flex hidden items-center justify-between w-1/4">
                             <div class="mode flex items-center gap-3"><span>Light</span>
                                 <button class="bg-none">
                                     <i class="fa-solid fa-toggle-on fa-2xl"></i>
@@ -72,6 +128,7 @@
                     </div>
 
                 </nav>
+
 
 
                 <div class="purple-lines">
@@ -243,12 +300,14 @@
                                 <div class="proImg relative flex">
                                     <img class="propic" src="./images/Untitled design.jpg" alt="">
                                     <div class="viewpro">
-                                        <div class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
-                                            <a href="https://priyanshu43a.github.io/notes.github.io/" target="_blank">View project</a>
+                                        <div
+                                            class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
+                                            <a href="https://priyanshu43a.github.io/notes.github.io/"
+                                                target="_blank">View project</a>
                                             <span class="material-symbols-outlined">
                                                 north_east
-                                                </span>
-                                                
+                                            </span>
+
                                         </div>
                                     </div>
                                     <div class="prodtls">
@@ -256,7 +315,9 @@
                                         <p>August 2023</p>
                                     </div>
                                 </div>
-                                <span style="font-size: 4rem; font-weight: 800; filter: drop-shadow(10px 10px 25px #8226dd);" class="material-symbols-outlined absolute -top-10 right-16 font-bold">
+                                <span
+                                    style="font-size: 4rem; font-weight: 800; filter: drop-shadow(10px 10px 25px #8226dd);"
+                                    class="material-symbols-outlined absolute -top-10 right-16 font-bold">
                                     close
                                 </span>
 
@@ -267,12 +328,14 @@
                                 <div class="proImg relative flex">
                                     <img class="propic" src="./images/Untitled design (1).jpg" alt="">
                                     <div class="viewpro">
-                                        <div class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
-                                            <a href="https://priyanshu43a.github.io/gsapproject.github.io/" target="_blank">View project</a>
+                                        <div
+                                            class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
+                                            <a href="https://priyanshu43a.github.io/gsapproject.github.io/"
+                                                target="_blank">View project</a>
                                             <span class="material-symbols-outlined">
                                                 north_east
-                                                </span>
-                                                
+                                            </span>
+
                                         </div>
                                     </div>
                                     <div style="right: 80%; top: 60%; width: 100%;" class="prodtls">
@@ -280,7 +343,7 @@
                                         <p>March 2024</p>
                                     </div>
                                 </div>
-                                
+
 
                             </div>
 
@@ -288,12 +351,14 @@
                                 <div class="proImg relative flex">
                                     <img class="propic" src="./images/Annotation 2024-05-30 100222.png" alt="">
                                     <div class="viewpro">
-                                        <div class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
-                                            <a href="https://priyanshu43a.github.io/spotifyclone.github.io/" target="_blank">View project</a>
+                                        <div
+                                            class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
+                                            <a href="https://priyanshu43a.github.io/spotifyclone.github.io/"
+                                                target="_blank">View project</a>
                                             <span class="material-symbols-outlined">
                                                 north_east
-                                                </span>
-                                                
+                                            </span>
+
                                         </div>
                                     </div>
                                     <div style="left: 90%; top: 40%; width: 100%;" class="prodtls">
@@ -301,7 +366,7 @@
                                         <p>April 2024</p>
                                     </div>
                                 </div>
-                                
+
 
                             </div>
 
@@ -309,12 +374,14 @@
                                 <div class="proImg relative flex">
                                     <img class="propic" src="./images/Untitled design (2).jpg" alt="">
                                     <div class="viewpro">
-                                        <div class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
-                                            <a href="https://priyanshu43a.github.io/prtwogood.github.io/" target="_blank">View project</a>
+                                        <div
+                                            class="hover:border-white border-transparent border-2 border-t-0 border-l-0 border-r-0">
+                                            <a href="https://priyanshu43a.github.io/prtwogood.github.io/"
+                                                target="_blank">View project</a>
                                             <span class="material-symbols-outlined">
                                                 north_east
-                                                </span>
-                                                
+                                            </span>
+
                                         </div>
                                     </div>
                                     <div style="right: 70%; top: 20%; width: 100%;" class="prodtls">
@@ -322,7 +389,7 @@
                                         <p>May 2024</p>
                                     </div>
                                 </div>
-                                
+
 
                             </div>
 
@@ -346,7 +413,7 @@
 
 
             <div class="blogPage">
-                
+
             </div>
 
 

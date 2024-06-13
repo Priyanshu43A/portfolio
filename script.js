@@ -73,7 +73,7 @@ function loadingAnimation(params) {
 }
 
 
-loadingAnimation();
+//loadingAnimation();
 
 
 const scroll = new LocomotiveScroll({
@@ -271,4 +271,39 @@ const hideProAnimation = (img)=>{
 
     
 }
+
+
+// Function to show the mobile navigation with animation
+function showMobNav() {
+    gsap.fromTo(".expandedNav", 
+        { x: 1000 }, // Start position
+        { x: 0, duration: 0.5, ease: 'power3.out' } // End position
+    );
+}
+
+// Function to hide the mobile navigation with animation
+function hideMobNav() {
+    gsap.to(".expandedNav", {
+        x: 1000, // End position
+        duration: 0.5,
+        ease: 'power3.in', // Ease for the hide animation
+        onComplete: () => {
+            expandedNav.classList.remove('active'); // Remove the active class after animation
+        }
+    });
+}
+
+const menu = document.querySelector('.menu');
+const expandedNav = document.querySelector('.expandedNav');
+const close = document.querySelector('.closeNav');
+
+menu.addEventListener('click', () => {
+    expandedNav.classList.add('active'); // Add the active class before animation
+    showMobNav();
+});
+
+close.addEventListener('click', () => {
+    hideMobNav();
+});
+
 
