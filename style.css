@@ -326,6 +326,7 @@ nav{
   @media screen and (max-width: 768px) {
    body{
     font-size: 1rem;
+    background-color: #000;
    }
    
    .mobile-nav{

@@ -120,6 +120,41 @@ let skills = [
     },
 ]
 
+let mobskills = [
+    {
+        name: 'HTML',
+        value: 100
+    },
+    {
+        name: 'CSS',
+        value: 90
+    },
+    {
+        name: 'JavaScript',
+        value: 100
+    },
+    {
+        name: 'tailwind',
+        value: 100
+    },
+    {
+        name: 'React',
+        value: 50
+    },
+    {
+        name: 'Node js',
+        value: 80
+    },
+    {
+        name: 'Express js',
+        value: 70
+    },
+    {
+        name: 'MongoDB',
+        value: 80
+    },
+]
+
 skills.forEach((skill) => {
     const skillCont = document.querySelector('.skills');
     const name = skill.name;
@@ -132,6 +167,22 @@ skills.forEach((skill) => {
 </div>`;
 
     skillCont.appendChild(skilldiv);
+
+
+})
+
+
+mobskills.forEach((skill) => {
+    const skillCont = document.querySelector('.mobskills');
+    const name = skill.name;
+    const value = skill.value;
+    const mobskilldiv = document.createElement('div');
+    mobskilldiv.classList.add('mobskill');
+    mobskilldiv.innerHTML = ` <div class="w-full h-12">
+    <div style="width: ${value}%;" class="bg-purple-600 h-full text-xl p-4 flex items-center font-bold">${name}</div>
+</div>`;
+
+    skillCont.appendChild(mobskilldiv);
 
 
 })
