@@ -73,7 +73,7 @@ function loadingAnimation(params) {
 }
 
 
-//loadingAnimation();
+loadingAnimation();
 
 
 const scroll = new LocomotiveScroll({
@@ -221,7 +221,7 @@ function updateCursor(e) {
 }
 
 // Attach event listener
-//document.querySelector('body').addEventListener('mousemove', updateCursor);
+document.querySelector('body').addEventListener('mousemove', updateCursor);
 
 
 
